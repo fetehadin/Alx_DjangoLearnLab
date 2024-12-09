@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Advanced API Project
 
 This project demonstrates the use of Django REST Framework to build advanced APIs with features like filtering, searching, and ordering, as well as comprehensive unit tests for CRUD operations and API functionalities.
@@ -48,3 +49,6 @@ POST /api/books/ - Create a new book
 GET /api/books/<id>/ - Retrieve a single book
 PUT /api/books/<id>/ - Update a book
 DELETE /api/books/<id>/ - Delete a book
+=======
+# LibraryProject
+>>>>>>> 33ddc232c39db4425cc559cd88841abc6f6fb91d

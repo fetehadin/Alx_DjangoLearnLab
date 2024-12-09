@@ -1,4 +1,5 @@
 from rest_framework import serializers
+<<<<<<< HEAD
 from .models import Author, Book
 from datetime import datetime
 
@@ -23,3 +24,11 @@ class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Author
         fields = ['id', 'name', 'books']
+=======
+from .models import Book
+
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Book
+        fields= '__all__'
+>>>>>>> 33ddc232c39db4425cc559cd88841abc6f6fb91d

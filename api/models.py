@@ -1,5 +1,6 @@
 from django.db import models
 
+<<<<<<< HEAD
 # The Author model represents a writer who can have multiple books.
 class Author(models.Model):
     name = models.CharField(max_length=255)  # The name of the author
@@ -17,3 +18,13 @@ class Book(models.Model):
 
     def __str__(self):
         return f"{self.title} ({self.publication_year})"  # Returns the book's title and year
+=======
+# Create your models here.
+
+class Book(models.Model):
+    title = models.CharField(max_length=200)
+    author = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+>>>>>>> 33ddc232c39db4425cc559cd88841abc6f6fb91d

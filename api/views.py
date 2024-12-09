@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from rest_framework import generics, filters
 from .models import Book
 from .serializers import BookSerializer
@@ -54,3 +55,23 @@ class BookDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticatedOrReadOnly]
 
 
+=======
+from django.shortcuts import render
+from rest_framework import generics, viewsets
+from rest_framework.generics import ListAPIView
+from .models import Book
+from .serializers import BookSerializer
+from rest_framework.permissions import IsAuthenticated
+
+
+# Create your views here.
+
+class BookList(generics.ListAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+
+class BookViewSet(viewsets.ModelViewSet):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+    permission_classes = [IsAuthenticated]
+>>>>>>> 33ddc232c39db4425cc559cd88841abc6f6fb91d
